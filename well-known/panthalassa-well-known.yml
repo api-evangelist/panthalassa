@@ -1,0 +1,52 @@
+generated: '2026-08-26'
+method: probed
+source: >-
+  Direct unauthenticated HTTPS probes of every host named in apis.yml. Panthalassa
+  publishes a single two-page marketing site (panthalassa.com) and resolves no API,
+  docs, developer, app, portal or mcp subdomain, so there is exactly one host to probe.
+  Every /.well-known/ path returned a hard 404 with the site's standard Nuxt/Prismic
+  404 body — a recorded absence, not a soft-200 shell.
+hosts:
+- host: panthalassa.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+  - path: /.well-known/mcp.json
+    status: 404
+subdomains_probed:
+- host: api.panthalassa.com
+  dns: NXDOMAIN
+- host: docs.panthalassa.com
+  dns: NXDOMAIN
+- host: developer.panthalassa.com
+  dns: NXDOMAIN
+- host: dev.panthalassa.com
+  dns: NXDOMAIN
+- host: app.panthalassa.com
+  dns: NXDOMAIN
+- host: mcp.panthalassa.com
+  dns: NXDOMAIN
+- host: portal.panthalassa.com
+  dns: NXDOMAIN
+- host: data.panthalassa.com
+  dns: NXDOMAIN
+- host: status.panthalassa.com
+  dns: NXDOMAIN
+note: >-
+  No document was served. Per the enrichment contract no WellKnown or SecurityTxt
+  common[] pointer is emitted from this file — it records an absence, and an absence
+  must not be scored as a presence.

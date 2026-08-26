@@ -64,5 +64,9 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Panthalassa is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://www.nasdaqprivatemarket.com/
+Panthalassa is a Portland, Oregon public-benefit corporation founded in 2016 that builds ocean wave-energy "nodes" — a buoyant sphere over a long central tube — which convert deep-water wave motion into electricity in the open ocean, and pair that power with sealed, seawater-cooled compute containers so AI and data-center workloads run at sea rather than sending electrons ashore.
+
+Panthalassa publishes no public API, SDK, developer portal or machine-readable contract. As of 2026-08-26 its entire public web surface is two pages; no api/docs/developer/app/mcp subdomain resolves, there is no Panthalassa GitHub organization, and every `/.well-known/` and spec path on panthalassa.com returns 404. This profile records that absence — see `x-coverage` in `apis.yml`.
+
+- https://panthalassa.com/
+- https://panthalassa.com/join

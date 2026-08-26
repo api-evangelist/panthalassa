@@ -1,7 +1,14 @@
 aid: panthalassa
 name: Panthalassa
-description: 'Panthalassa is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: 'Panthalassa is a Portland, Oregon public-benefit corporation founded in
+  2016 that builds ocean wave-energy "nodes" — a buoyant sphere and central tube that
+  convert deep-water wave motion into electricity in the open ocean. Rather than
+  transmitting power to shore, the company pairs each node with sealed, seawater-cooled
+  compute containers so the electrons power AI and data-center workloads at sea, backhauled
+  over satellite link. It has run the Ocean-2 Pacific pilot and markets no public API,
+  SDK, developer portal or machine-readable contract; this profile records that absence
+  and the company''s public web surface.'
+image: https://panthalassa.com/images/favicon.png
 url: https://raw.githubusercontent.com/api-evangelist/panthalassa/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
@@ -12,6 +19,15 @@ created: '2026-08-26'
 modified: '2026-08-26'
 tags:
 - Company
+- Energy
+- Renewable Energy
+- Wave Energy
+- Ocean
+- Data Centers
+- Compute
+- Climate Tech
+- Hardware
+- Public Benefit Corporation
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -20,4 +36,41 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: https://www.nasdaqprivatemarket.com/
+  url: https://panthalassa.com/
+- type: Careers
+  url: https://panthalassa.com/join
+- type: LinkedIn
+  url: https://www.linkedin.com/company/p9a/
+- type: Twitter
+  url: https://x.com/_panthalassa
+- type: YouTube
+  url: https://www.youtube.com/@panthalassa.energy
+- type: DomainSecurity
+  url: security/panthalassa-domain-security.yml
+- type: LLMsTxt
+  url: llms/panthalassa-llms.txt
+x-enrichment:
+  date: '2026-08-26'
+  status: minimal
+  artifacts_added: 3
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: not-a-software-company
+  detail: >-
+    Panthalassa is a pre-commercial ocean wave-energy hardware company whose entire public
+    web presence is two Prismic-backed pages (a homepage and a Greenhouse-fed careers page);
+    it resolves no api/docs/developer/app/mcp subdomain, has no GitHub organization, and
+    every /.well-known/ and spec path on panthalassa.com returns a hard 404.
+  evidence:
+  - url: https://panthalassa.com/
+    status: 200
+  - url: https://panthalassa.com/openapi.json
+    status: 404
+  - url: https://panthalassa.com/.well-known/api-catalog
+    status: 404
+  - url: https://panthalassa.com/.well-known/agent-card.json
+    status: 404
+  - url: https://api.github.com/orgs/panthalassa
+    status: 404
+  checked: '2026-08-26'
