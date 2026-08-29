@@ -8,6 +8,17 @@ description: 'Panthalassa is a Portland, Oregon public-benefit corporation found
   over satellite link. It has run the Ocean-2 Pacific pilot and markets no public API,
   SDK, developer portal or machine-readable contract; this profile records that absence
   and the company''s public web surface.'
+deliveryModel:
+  model: unknown
+  open_source: false
+  commercial: false
+  callable_host: false
+  label: Delivery model not determined — needs a product licence on record
+  confidence: low
+  source:
+  - none
+  generated: '2026-08-28'
+  method: derived
 image: https://panthalassa.com/images/favicon.png
 url: https://raw.githubusercontent.com/api-evangelist/panthalassa/refs/heads/main/apis.yml
 x-type: company
